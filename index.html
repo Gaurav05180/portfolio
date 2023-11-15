@@ -61,7 +61,7 @@
             margin-left: 20px;
         }
 
-        #about, #education, #aspirations, #skills {
+        #about, #education, #aspirations {
             margin-bottom: 30px;
         }
 
@@ -69,27 +69,6 @@
             max-width: 100%;
             border-radius: 10px;
             margin-top: 10px;
-        }
-
-        #du-image {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-
-        .skills-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .skill {
-            background-color: #e67e22; /* Orange */
-            color: #fff;
-            border-radius: 5px;
-            padding: 5px 10px;
-            margin: 5px;
         }
 
         footer {
@@ -104,6 +83,14 @@
         footer ul li {
             margin-bottom: 10px;
         }
+
+        .email-link {
+            color: #e67e22; /* Orange */
+            text-decoration: none;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -167,7 +154,7 @@
             margin-left: 20px;
         }
 
-        #about, #education, #aspirations, #skills {
+        #about, #education, #aspirations {
             margin-bottom: 30px;
         }
 
@@ -175,27 +162,6 @@
             max-width: 100%;
             border-radius: 10px;
             margin-top: 10px;
-        }
-
-        #du-image {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-
-        .skills-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .skill {
-            background-color: #e67e22; /* Orange */
-            color: #fff;
-            border-radius: 5px;
-            padding: 5px 10px;
-            margin: 5px;
         }
 
         footer {
@@ -220,27 +186,6 @@
             text-decoration: underline;
         }
     </style>
-    <script>
-        function changeImage() {
-            var image = document.getElementById('du-image');
-            var imagesArray = [
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/1.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/2.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/3.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/4.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/5.jpeg',
-            ];
-            var currentIndex = imagesArray.indexOf(image.src);
-
-            if (currentIndex < imagesArray.length - 1) {
-                image.src = imagesArray[currentIndex + 1];
-            } else {
-                image.src = imagesArray[0];
-            }
-        }
-
-        setInterval(changeImage, 3000);
-    </script>
 </head>
 <body>
     <header>
@@ -248,252 +193,20 @@
             <img src="https://media.licdn.com/dms/image/D4D03AQE6lOIy9McI4Q/profile-displayphoto-shrink_800_800/0/1696899155994?e=2147483647&v=beta&t=oG2OMcAdwU-n9BslM-jgTGsWSfE1FKeA__WlCjGJc7U" alt="Gaurav Maurya">
         </div>
         <div id="header-content">
-            <h1>Gaurav Maurya</h1>
-            <p style="font-size: 1.2em;">Aspiring Web Developer</p>
+            <h1 style="color: #e74c3c;">Gaurav Maurya</h1>
+            <p style="font-size: 1.2em; color: #2ecc71;">Aspiring Web Developer</p>
         </div>
     </header>
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Born in Fatehpur, Uttar Pradesh, I come from a humble background, where education was a pursuit against all odds. My journey from a Hindi-medium school to pursuing a BSc program and currently undertaking MCA at DU reflects my determination to overcome challenges...
-            </p>
+            <h2 style="color: #3498db;">About Me</h2>
+            <p>Born in Fatehpur, Uttar Pradesh, I come from a humble background, where education was a pursuit against all odds. My journey from a Hindi-medium school to pursuing a BSc program and currently undertaking MCA at DU reflects my determination to overcome challenges...</p>
         </section>
         <section id="education">
-            <h2>Education</h2>
-            <p>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaurav Maurya's Portfolio</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4; /* Light Gray */
-        }
-
-        header, main, footer {
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        h1, h2, p {
-            color: #333;
-        }
-
-        h1 {
-            color: #e74c3c; /* Red */
-        }
-
-        h2 {
-            color: #3498db; /* Blue */
-        }
-
-        p {
-            color: #2ecc71; /* Green */
-        }
-
-        #profile-picture img {
-            border-radius: 50%;
-            max-width: 150px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: 3px solid #e74c3c; /* Red */
-            animation: blink 1s infinite; /* Blinking animation */
-        }
-
-        @keyframes blink {
-            0%, 49.9%, 100% {
-                border-color: #e74c3c; /* Red */
-            }
-            50%, 99.9% {
-                border-color: #3498db; /* Blue */
-            }
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-        }
-
-        #header-content {
-            margin-left: 20px;
-        }
-
-        #about, #education, #aspirations, #skills {
-            margin-bottom: 30px;
-        }
-
-        #education img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-
-        #du-image {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-
-        .skills-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .skill {
-            background-color: #e67e22; /* Orange */
-            color: #fff;
-            border-radius: 5px;
-            padding: 5px 10px;
-            margin: 5px;
-        }
-
-        footer {
-            margin-top: 30px;
-        }
-
-        footer ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        footer ul li {
-            margin-bottom: 10px;
-        }
-
-        .email-link {
-            color: #e67e22; /* Orange */
-            text-decoration: none;
-        }
-
-        .email-link:hover {
-            text-decoration: underline;
-        }
-    </style>
-    <script>
-        function changeImage() {
-            var image = document.getElementById('du-image');
-            var imagesArray = [
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/1.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/2.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/3.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/4.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/5.jpeg',
-            ];
-            var currentIndex = imagesArray.indexOf(image.src);
-
-            if (currentIndex < imagesArray.length - 1) {
-                image.src = imagesArray[currentIndex + 1];
-            } else {
-                image.src = imagesArray[0];
-            }
-        }
-
-        setInterval(changeImage, 3000);
-    </script>
-</head>
-<body>
-    <header>
-        <div id="profile-picture">
-            <img src="https://media.licdn.com/dms/image/D4D03AQE6lOIy9McI4Q/profile-displayphoto-shrink_800_800/0/1696899155994?e=2147483647&v=beta&t=oG2OMcAdwU-n9BslM-jgTGsWSfE1FKeA__WlCjGJc7U" alt="Gaurav Maurya">
-        </div>
-        <div id="header-content">
-            <h1>Gaurav Maurya</h1>
-            <p style="font-size: 1.2em;">Aspiring Web Developer</p>
-        </div>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Born in Fatehpur, Uttar Pradesh, I come from a humble background, where education was a pursuit against all odds. My journey from a Hindi-medium school to pursuing a BSc program and currently undertaking MCA at DU reflects my determination to overcome challenges...
-            </p>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <p>
-                Completed 12th grade with consistently excellent academic performance despite financial constraints. Currently pursuing MCA at Delhi University, where I am mastering subjects like C++, DSA, DBMS, SQL, and OOPs...
-            </p>
-            <img id="du-image" src="https://cs.du.ac.in/uploads/events/2023/Aug15/1.jpeg" alt="Delhi University">
+            <h2 style="color: #e67e22;">Education</h2>
+            <p>Completed 12th grade with consistently excellent academic performance despite financial constraints. Currently pursuing MCA at Delhi University, where I am mastering subjects like C++, DSA, DBMS, SQL, and OOPs...</p>
+            <img src="https://cs.du.ac.in/uploads/events/2023/Aug15/1.jpeg" alt="Delhi University">
         </section>
         <section id="aspirations">
-            <h2>Aspirations</h2>
-            <p>
-                My dream is to excel in the field of web development. Despite facing hurdles, my passion for coding has led me to embark on this journey. I am committed to continuous learning and honing my skills...
-            </p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li class="skill">C++</li>
-                <li class="skill">Data Structures and Algorithms</li>
-                <li class="skill">Database Management (DBMS)</li>
-                <li class="skill">SQL</li>
-                <li class="skill">Object-Oriented Programming (OOPs)</li>
-                <!-- Add more skills as needed -->
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Contact Me:</p>
-        <ul>
-            <li>Email: <a href="mailto:gaurav.maurya.mca23.du@gmail.com"
-￼Enter        .email-link {
-            color: #e67e22; /* Orange */
-            text-decoration: none;
-        }
-
-        .email-link:hover {
-            text-decoration: underline;
-        }
-    </style>
-    <script>
-        function changeImage() {
-            var image = document.getElementById('du-image');
-            var imagesArray = [
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/1.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/2.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/3.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/4.jpeg',
-                'https://cs.du.ac.in/uploads/events/2023/Aug15/5.jpeg',
-            ];
-            var currentIndex = imagesArray.indexOf(image.src);
-
-            if (currentIndex < imagesArray.length - 1) {
-                image.src = imagesArray[currentIndex + 1];
-            } else {
-                image.src = imagesArray[0];
-      }
-        }
-
-        setInterval(changeImage, 3000);
-    </script>
-</head>
-<body>
-    <header>
-        <div id="profile-picture">
-            <img src="https://media.licdn.com/dms/image/D4D03AQE6lOIy9McI4Q/profile-displayphoto-shrink_800_800/0/1696899155994?e=2147483647&v=beta&t=oG2OMcAdwU-n9BslM-jgTGsWSfE1FKeA__WlCjGJc7U" alt="Gaurav Maurya">
-        </div>
-        <div id="header-content">
-            <h1>Gaurav Maurya</h1>
-            <p style="font-size: 1.2em;">Aspiring Web Developer</p>
-        </div>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Born in Fatehpur, Uttar Pradesh, I come from a humble background, where education was a pursuit against all odds. My journey from a Hindi-medium school to pursuing a BSc program and currently undertaking MCA at DU reflects my determination to overcome challenges...
-            </p>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <p>
+            <h2 style="color: #e74c3c;">Aspirations</h2>
+            <p>My dream is to excel in the field of web development. Despite facing hurdles, my passion for coding has led me to embark on this
